@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Congratulazioni Dottoressa!</title>
+    <!-- <style>
+        body, html { height: 100%; margin: 0; overflow: hidden; }
+        /* canvas { display: block; background: #000; } */
+    </style> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <canvas id="fireworks"></canvas> -->
+    <!-- <script src="fireworks.js"></script> -->
+    <div id="particles-js"></div>
+    <div class="content">
+        <h1>CONGRATULAZIONI DOTTORESSA ❤️</h1>
+        <br><br>
+        <a href="index.html" class="celebrate-link">Click here</a>
+    </div>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-fireworks@3/tsparticles.preset.fireworks.bundle.min.js"></script>
+<script>
+    tsParticles.load({
+  id: "tsparticles",
+  options: {
+    preset: "fireworks",
+  },
+});
+</script>
+
+<style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensures the text is above the particles */
+    text-align: center;
+    color: white; /* Adjust color as needed */
+    background-color: rgba(66, 183, 246, 0.233); /* Soft blue with transparency */
+    border-radius: 30px; /* Smooth borders */
+    padding: 50px; /* Add some padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for depth */
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5.5em; /* Adjust size as needed */
+    font-family: 'Dancing Script', cursive;
+}
+
+.celebrate-link {
+    /* display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 3em;
+    border-radius: 5px;
+    font-family: Arial, sans-serif; */
+    padding: 10px 20px;
+    background-color: #42b7f6; 
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    border-radius: 20px; /* Makes the button rounded */
+    border: 2px solid transparent;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Dancing Script', cursive;    
+}
+
+.celebrate-link:hover{
+    background-color: #ff65a3;
+    color: #ffffff;
+    border-color: #ff65a3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+</style>

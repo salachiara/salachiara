@@ -1,0 +1,94 @@
+<header class="intro">
+  <h1 class="intro__hello">Ciao!
+    <span class="emoji wave-hand animated"></span>
+  </h1>
+
+  <h2 class="intro__tagline">Sono 
+    <span class="name">Chiara Sala</span>, una psicologa, dottoressa magistrale laureata in Psicologia dello sviluppo e dei processi di tutela.
+    <!-- <span class="emoji technologist"></span> -->
+  </h2>
+
+  <h3 class="intro__contact">
+    <span>Contattami </span>
+    <span class="emoji pointer"></span>
+    <span>
+      <a href="mailto:&#112;&#115;&#105;&#99;&#111;&#108;&#111;&#103;&#97;&#64;&#99;&#104;&#105;&#97;&#114;&#97;&#115;&#97;&#108;&#97;&#46;&#105;&#116;" target="_blank" class="highlight-link">&#112;&#115;&#105;&#99;&#111;&#108;&#111;&#103;&#97;&#64;&#99;&#104;&#105;&#97;&#114;&#97;&#115;&#97;&#108;&#97;&#46;&#105;&#116;</a>
+    </span>
+  </h3>
+  <div class="down-arrow"></div>
+</header>
+
+<style>
+  .down-arrow {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: 50%; /* Center horizontally */
+  width: 0;
+  height: 30px;
+  border-left: 2px solid transparent; /* Make the line invisible */
+  border-right: 2px solid transparent; /* Make the line invisible */
+  border-bottom: 2px solid; /* Only show the bottom border as the line */
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: "";
+  position: absolute;
+  top: 28px; /* Adjusted to better align with the line's bottom */
+  left: -8px; /* Half the width of the arrowhead to center it */
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent; /* Left side of arrowhead */
+  border-right: 8px solid transparent; /* Right side of arrowhead */
+  border-top: 8px solid; /* Top side of arrowhead, visible part */
+}
+
+@keyframes jumpInfinite {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+ /*  .down-arrow {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+} */
+
+</style>

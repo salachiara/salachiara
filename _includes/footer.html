@@ -1,0 +1,17 @@
+<footer class="footer">
+  <div class="footer__copyright">
+      <span>Design inspired by <a style="font-weight: 100;" href="https://brittanychiang.com/">Brittany Chiang</a></span>
+  </div>
+  <div class="footer__links">
+    {% for link in site.social %}
+    <a href="{{link.url}}" target="_blank" title="{{link.title}}">
+      <span class="text">{{link.title}}</span>
+      <img src="{{site.baseurl}}/img/social/{{link.title}}.svg" alt="{{link.title}}">
+    </a>
+    {% endfor %}
+    <a href="mailto:&#112;&#115;&#105;&#99;&#111;&#108;&#111;&#103;&#97;&#64;&#99;&#104;&#105;&#97;&#114;&#97;&#115;&#97;&#108;&#97;&#46;&#105;&#116;" target="_blank" title="Email">
+      <span class="text">Email</span>
+      <img src="{{site.baseurl}}/img/social/email.svg" alt="Email">
+    </a>
+  </div>
+</footer>

@@ -1,0 +1,24 @@
+languages:
+  - item: Italiano - Madrelingua
+  - item: Inglese - Avanzato
+  - item: Francese - Base
+
+frameworks:
+  - item: Suite Office - Avanzato
+  - item: Software SPSS - Base
+
+tools:
+  - item: Bash
+  - item: Git & Github
+  - item: Gulp & Grunt
+  - item: Chrome DevTools
+  - item: Postman
+  - item: MongoDB
+
+design:
+  - item: Sketch
+  - item: InDesign
+  - item: InVision
+  - item: Prototyping
+  - item: Wireframing
+  - item: User Testing

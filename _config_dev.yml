@@ -1,0 +1,35 @@
+# Site settings
+name: Chiara Sala
+title: Chiara Sala | Psicologa
+description: Chiara Sala - psicologa, dottoressa magistrale laureata in Psicologia dello sviluppo e dei processi di tutela.
+url: https://chiarasala.it
+baseurl: ''
+email: psicologa@chiarasala.it
+cover: img/og.png
+logo: img/emojis/technologist.png
+resume: resume.pdf
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/chiara-sala-0a2b2b250/
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap
